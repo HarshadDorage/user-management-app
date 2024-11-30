@@ -32,11 +32,7 @@ const UserListPage = () => {
         className="w-full p-2 border rounded mb-4"
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <Link
-        to="/add-user"
-        className="mb-4 inline-block bg-green-500 text-white p-2 rounded hover:bg-green-600">
-        Add New User
-      </Link>
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredUsers.map((user) => (
           <div key={user.id} className="bg-slate-300 p-4 shadow rounded ring-offset-current">
